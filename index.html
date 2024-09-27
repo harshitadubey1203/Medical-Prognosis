@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prognosis Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="overlay">
+        <div class="container">
+            <h1>Bringing the Future of Healthcare</h1>
+            
+            <form id="symptom-form">
+                <h2>Select Your Symptoms</h2>
+
+                <div class="symptoms">
+                    <!-- Checkbox for each symptom -->
+                    <label><input type="checkbox" name="symptom" value="itching"> Itching</label>
+                    <label><input type="checkbox" name="symptom" value="skin_rash"> Skin Rash</label>
+                    <label><input type="checkbox" name="symptom" value="nodal_skin_eruptions"> Nodal Skin Eruptions</label>
+                    <label><input type="checkbox" name="symptom" value="continuous_sneezing"> Continuous Sneezing</label>
+                    <label><input type="checkbox" name="symptom" value="shivering"> Shivering</label>
+                    <label><input type="checkbox" name="symptom" value="chills"> Chills</label>
+                    <label><input type="checkbox" name="symptom" value="joint_pain"> Joint Pain</label>
+                    <label><input type="checkbox" name="symptom" value="stomach_pain"> Stomach Pain</label>
+                    <label><input type="checkbox" name="symptom" value="acidity"> Acidity</label>
+                    <label><input type="checkbox" name="symptom" value="vomiting"> Vomiting</label>
+                    <label><input type="checkbox" name="symptom" value="burning_micturition"> Burning Micturition</label>
+                    <label><input type="checkbox" name="symptom" value="fatigue"> Fatigue</label>
+                    <label><input type="checkbox" name="symptom" value="weight_gain"> Weight Gain</label>
+                    <label><input type="checkbox" name="symptom" value="anxiety"> Anxiety</label>
+                    <label><input type="checkbox" name="symptom" value="mood_swings"> Mood Swings</label>
+                    <label><input type="checkbox" name="symptom" value="weight_loss"> Weight Loss</label>
+                    <label><input type="checkbox" name="symptom" value="restlessness"> Restlessness</label>
+                    <label><input type="checkbox" name="symptom" value="lethargy"> Lethargy</label>
+                    <label><input type="checkbox" name="symptom" value="patches_in_throat"> Patches in Throat</label>
+                    <label><input type="checkbox" name="symptom" value="high_fever"> High Fever</label>
+                    <!-- Add more symptoms here -->
+                </div>
+                
+                <button type="submit" id="predict-btn">Predict</button>
+            </form>
+
+            <div id="result" class="hidden">
+                <h2>Prediction Result</h2>
+                <p id="prediction">Your predicted prognosis will appear here after you submit your symptoms.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
